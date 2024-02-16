@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+.notesApp{
+    min-height: 100vh;
+    display: flex;
+    background: #7e64dc;
+}
+
+.sideView{
+    /* flex-shrink: 0; */
+    overflow-y: auto;
+    padding: 2em;
+    width: 300px;
+    
+}
+
+.smallContent{
+    height: 50px;
+}
+.addNotes {
+    /* background: #4E35A3; */
+    background: #dbe3f7;
+    color: #4E35A3;
+    border: none;
+    border-radius: 7px;
+    /* color: #ffffff; */
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.addNotes:hover {
+    background: #00af8c;
+}
+.list{
+    background: #F3F6FD;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.items{
+    padding: 2px 5px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #dbe3f7;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.selectedItems {
+    background: #fff;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.left{
+    width: 85%;
+}
+
+.updated{
+    width: 140px;
+    margin: 0;
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 15%;
+    height: 20px;
+    position: relative;
+}
+
+.right img:hover{
+    cursor: pointer;
+}
+
+.previewBackground{
+    background: #dbe3f7;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 1.5em;
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    height: 88%;
+    margin: 2em;
+    padding: 1.5em;
+}
+
+
+.notesTitle,
+.notesBody {
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.notesTitle {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.notesBody {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    resize: none;
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
+

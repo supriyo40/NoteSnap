@@ -12,8 +12,8 @@ export default class NotesView{
             </div>
             <div class="previewBackground">
                 <div class="preview">
-                    <input class="notesTitle" type="text" placeholder="Enter a title">
-                    <textarea class="notesBody" placeholder="Enter discription"></textarea>
+                    <input class="notesTitle" type="text" spellcheck="false" placeholder="Enter a title">
+                    <textarea class="notesBody" spellcheck="false" placeholder="Enter discription"></textarea>
                 </div>
             </div>
         `;
